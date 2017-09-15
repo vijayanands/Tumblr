@@ -11,12 +11,13 @@ import UIKit
 class PhotoDetailsViewController: UIViewController {
 
     @IBOutlet weak var photoImage: UIImageView!
-    var photoUrl: String? = nil
+    var photoUrl: URL? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        photoImage.setImageWith(photoUrl!)
     }
 
     override func didReceiveMemoryWarning() {
